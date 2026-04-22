@@ -1,10 +1,16 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #f4f6f8;
+  background: #f4f6f8;
+  transition: 0.3s;
 }
 
-/* NAVBAR */
+.dark-mode {
+  background: #121212;
+  color: white;
+}
+
+/* NAV */
 nav {
   background: #0b3d91;
   padding: 15px;
@@ -18,8 +24,15 @@ nav a {
   font-weight: 600;
 }
 
-nav a:hover {
-  text-decoration: underline;
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
 }
 
 /* HERO */
@@ -29,7 +42,7 @@ nav a:hover {
   background-size: cover;
   color: white;
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
 }
 
 .hero h1 {
@@ -42,19 +55,20 @@ nav a:hover {
   padding: 12px 25px;
   background: #ffcc00;
   color: black;
-  text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
   transition: 0.3s;
 }
 
 .button:hover {
-  background: #ffaa00;
+  transform: scale(1.05);
 }
 
 /* SECTIONS */
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   padding: 40px;
 }
@@ -65,6 +79,44 @@ nav a:hover {
   margin-bottom: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.6s;
+}
+
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 32px;
+  color: #1a73e8;
+}
+
+/* TESTIMONIALS */
+.testimonial {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+/* DARK MODE BUTTON */
+.toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: black;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 /* FOOTER */
