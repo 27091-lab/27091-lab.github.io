@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Support the Law</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="law.html">The Law</a>
+  <a href="support.html">Support</a>
+</nav>
+
+<div class="container">
+
+  <div class="section">
+    <h2>Why Support This Law?</h2>
+    <p>
+      Without regulation, AI can be used to manipulate elections, spread fake news,
+      and harm individuals.
+    </p>
+
+    <button class="button" onclick="showMessage()">Vote YES</button>
+
+    <p id="message"></p>
+  </div>
+
+</div>
+
+<footer>
+  <p>AI Transparency Campaign © 2026</p>
+</footer>
+
+<script>
+function showMessage() {
+  document.getElementById("message").innerText =
+    "✅ Thank you for supporting a safer digital future!";
+}
+</script>
+
+</body>
+</html>
