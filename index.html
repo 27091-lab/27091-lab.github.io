@@ -3,15 +3,23 @@
 <head>
   <title>AI Transparency Act</title>
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<div class="toggle" onclick="toggleDarkMode()">🌙</div>
+
 <nav>
+  <div class="logo">
+    <!-- SVG Logo -->
+    <svg width="30" height="30" viewBox="0 0 100 100" fill="white">
+      <circle cx="50" cy="50" r="40"/>
+      <text x="50%" y="55%" text-anchor="middle" fill="#0b3d91" font-size="30" font-family="Arial" dy=".3em">AI</text>
+    </svg>
+    ATDA Campaign
+  </div>
   <a href="index.html">Home</a>
   <a href="law.html">The Law</a>
   <a href="support.html">Support</a>
@@ -19,27 +27,48 @@
 
 <div class="hero">
   <h1>Protect Truth in the Age of AI</h1>
-  <p>Stop deepfakes. Demand transparency. Protect people.</p>
+  <p>Deepfakes and hidden AI threaten trust. This law restores it.</p>
   <a href="support.html" class="button">Vote YES</a>
 </div>
 
 <div class="container">
 
   <div class="section">
-    <h2>🚨 The Problem</h2>
+    <h2>The Growing AI Threat</h2>
     <p>
-      AI-generated content is becoming impossible to distinguish from reality.
-      Deepfakes can spread misinformation, scams, and manipulation.
+      AI-generated content is evolving faster than regulation. Deepfakes can now
+      mimic real people, influence elections, and spread misinformation globally.
+    </p>
+  </div>
+
+  <div class="section stats">
+    <div class="stat">
+      <h3>85%</h3>
+      <p>of people can't detect deepfakes</p>
+    </div>
+    <div class="stat">
+      <h3>60%</h3>
+      <p>increase in AI scams</p>
+    </div>
+    <div class="stat">
+      <h3>0 Laws</h3>
+      <p>strong enough to regulate AI</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>What This Law Does</h2>
+    <p>
+      The AI Transparency Act enforces labeling, accountability, and safety checks
+      on all high-risk AI systems.
     </p>
   </div>
 
   <div class="section">
-    <h2>📜 Our Solution</h2>
-    <p>
-      The AI Transparency & Deepfake Accountability Act ensures that all AI content
-      is clearly labeled and regulated.
-    </p>
-    <a href="law.html" class="button">Learn More</a>
+    <h2>Voices of Support</h2>
+    <p class="testimonial">"AI nearly fooled me with a fake voice scam." – Student</p>
+    <p class="testimonial">"We need rules before it's too late." – Teacher</p>
+    <p class="testimonial">"This law protects digital trust." – Small Business Owner</p>
   </div>
 
 </div>
@@ -48,5 +77,6 @@
   <p>AI Transparency Campaign © 2026</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
