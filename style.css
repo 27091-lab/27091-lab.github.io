@@ -126,3 +126,31 @@ footer {
   text-align: center;
   padding: 20px;
 }
+/* DARK MODE FIXES */
+
+.dark-mode nav {
+  background: #111;
+}
+
+.dark-mode body {
+  background: #121212;
+  color: white;
+}
+
+.dark-mode .section {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark-mode footer {
+  background: #111;
+}
+
+.dark-mode .button {
+  background: #ffd54f;
+  color: black;
+}
+
+.dark-mode a {
+  color: #90caf9;
+}
