@@ -1,13 +1,17 @@
-// Scroll animation
-const sections = document.querySelectorAll('.section');
+document.addEventListener("DOMContentLoaded", function () {
 
-window.addEventListener('scroll', () => {
-  sections.forEach(sec => {
-    const top = sec.getBoundingClientRect().top;
-    if (top < window.innerHeight - 100) {
-      sec.classList.add('show');
-    }
+  // Scroll animation
+  const sections = document.querySelectorAll('.section');
+
+  window.addEventListener('scroll', () => {
+    sections.forEach(sec => {
+      const top = sec.getBoundingClientRect().top;
+      if (top < window.innerHeight - 100) {
+        sec.classList.add('show');
+      }
+    });
   });
+
 });
 
 // Dark mode toggle
